@@ -18,11 +18,12 @@ body {
 a {
   text-decoration: none;
   transition: .3s;
+  color: #AA3D01;
 /*  cursor: pointer;*/
 }
 
 a:hover {
-  color: hsla(0, 0%, 29%, 1);
+  color: #dF861D;
   cursor: pointer;
 }
 
@@ -69,6 +70,28 @@ select {
   height: auto;
 }
 
+/* Main Section */
+
+#main {
+  grid-area: main;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  background-color: hsla(0, 0%, 98%, 1);
+  border-top: 1px solid hsla(0, 0%, 98%, 1);
+}
+
+#main h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+#main .button {
+  box-sizing: border-box;
+  width: 14.375rem;
+  padding: .875rem 0;
+}
+
 /* Reusable Component - Product List */
 
 .product-list-section {
@@ -106,6 +129,10 @@ select {
 .product-item .description {
   padding: 1.5rem;
   text-align: left;
+}
+
+.product-item .image-container img {
+  height: 75%;
 }
 
 
@@ -227,9 +254,17 @@ header {
   align-items: center;
   padding: .875rem 1rem;
   border-radius: 54px;
+}
+
+a.cart {
   background-color: #FDC029;
   color: #DF861D;
-  font-weight: bold;
+  font-weight: 700;
+}
+
+a:hover.cart {
+  background-color: #DF861D;
+  color: #FDC029;
 }
 
 .cart img {
@@ -292,27 +327,7 @@ nav a:hover {
   }
 }
 
-/* Main Section */
 
-#main {
-  grid-area: main;
-  display: grid;
-  justify-items: center;
-  text-align: center;
-  background-color: hsla(0, 0%, 98%, 1);
-  border-top: 1px solid hsla(0, 0%, 98%, 1);
-}
-
-#main h2 {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-#main .button {
-  box-sizing: border-box;
-  width: 14.375rem;
-  padding: .875rem 0;
-}
 
 /* Footer */
 
@@ -334,12 +349,17 @@ footer .links {
 }
 
 footer h4 {
-  font-size: 1.15rem;
+  font-size: 1rem;
   text-decoration: underline;
 }
 
 footer a {
-  color: hsla(0, 0%, 29%, 1);
+  font-size: 0.9rem;
+  color: #AA3D01;
+}
+
+footer a:hover {
+  font-size: 1.1rem;
 }
 
 @media only screen and (max-width: 810px) {

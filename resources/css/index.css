@@ -72,6 +72,6 @@
   }
 }
 
-.products h2.recently {
+#main.landing .products h2.recently {
   font-size: 1.5rem;
 }
