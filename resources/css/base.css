@@ -383,3 +383,19 @@ footer a:hover {
     grid-column: auto;
   }
 }
+
+/* Added by Jen */
+a.deals {
+  color: red;
+}
+
+a:hover.deals {
+  background-color: red;
+  color: #FDC029;
+}
+
+a:hover.deals.product-item  {
+  background: none;
+}
+
+

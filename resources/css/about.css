@@ -7,9 +7,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-size: inherit;
   font-stretch: condensed;
-  color: hsla(0, 100%, 100%, 1);
+  border-radius: 1.5rem;
+  color: #DF861D;
+  font-family: 'Yanone Kaffeesatz', Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
 
 }
 
@@ -18,9 +21,16 @@
   color: hsla(0, 0%, 29%, 1);
 }
 
+.about h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .about h3 {
   margin-bottom: 1rem;
-  font-size: inherit;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .about p {
@@ -50,10 +60,15 @@
   }
 
   .about h3 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
   .about p {
     font-size: 1rem;
   }
+}
+
+.join a {
+  background-color: #FDC029;
+  color: #AA3D01;
 }
