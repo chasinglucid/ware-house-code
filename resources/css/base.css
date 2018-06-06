@@ -276,8 +276,6 @@ nav {
   background-color: #FDC029;
   color: #AA3D01;
   border-top: 1px solid hsla(0, 0%, 85%, 1);
-/*    padding: 1.313rem 24.25rem 1.313rem 25rem; */
-
   padding-right: 24.25rem;
   padding-left: 25rem;
   box-sizing: border-box;
@@ -286,43 +284,31 @@ nav {
   align-items: center;
 }
 
-/*nav .box.deal {
-  color: red;
-} */
-
-nav div.box {
+nav a {
   border-right: 1px solid lightgray;
   text-align: center;
   line-height: 2.626rem;
   width: 100%;
+  font-weight: bold;
+  height: 100%;
 }
 
-nav div.deals {
+a.deals {
+  color: red;
+} 
+
+
+nav a.deals {
   border-left: 1px solid lightgray;
   color: red;
 }
 
-
-div:hover.box,
 nav a:hover {
   color:#FDC029;
   background-color: #AA3D01;
 }
 
-nav div:hover .box.deals {/*,
-nav div.box.deals a:hover.deal {
-*/background-color: red;
-  color: #FDC029;
-}
 
-nav a {
-  font-weight: bold;
-}
-
-/*a:hover.deals.product-item  {
-  background: none;
-}
-*/
 div.secondary {
   grid-area: secondary;
   display: grid;
@@ -332,14 +318,24 @@ div.secondary {
   padding: 1rem 0px; 
 }
 
-div.secondary a:hover,
 a:hover {
-  font-size: 1.22rem;
-  color: #FDC029;
+  
+}
+
+div.secondary a:hover{
+  /*  font-size: 1.22rem;
+*/  color: #FDC029;
   background-color: #AA3D01;
   padding: 10px 10px;
   border-radius: 5px;
 }
+
+nav a:hover.deals {
+  background-color: red;
+  color: #FDC029;
+  padding: 0;
+}
+
 
 /*nav a:visted {
   color: hsla(0, 0%, 29%, 1);
@@ -421,9 +417,6 @@ footer a:hover {
 }
 
 /* Added by Jen */
-a.deal {
-  color: red;
-} 
 /*
 a:hover.deal {
   background-color: red;
