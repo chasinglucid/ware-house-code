@@ -50,6 +50,7 @@ select {
   text-align: center;
   color: hsla(0, 0%, 93%, 1);
   transition: .25s;
+  font-weight: bold;
 }
 
 .button:hover {
@@ -255,8 +256,9 @@ header {
 
 a.cart {
   background-color: #FDC029;
-  color: #DF861D;
-  font-weight: 700;
+  color: #AA3D01;
+  font-family: arial, sans-serif;
+  font-weight: bolder;
 }
 
 a:hover.cart {

@@ -1,10 +1,25 @@
 # ware-house-code
 
+TO DO -- 6/7/2018:
+1. Fix breadcrumbs
+2. On about.html, correct hover on button at bottom
+3. Add login pop-up
+4. Add form fields on Sell page
+5. Add "remove" to items and update button on cart.html
+6. Create links to products on cart.html
+7. Correct job search bar placeholders and titles on jobs.html
+8. redesign mobile responsive
+
+
+---------------------------------------------------
 
 Completed -- 6/6/2018:
 1. Headers on all but index.html need "Today's Deals" color and hover are corrected (change color to red)
 2. Products on sofas.html, tables.html, and chairs.html formatting matches index.html and deals.html
 3. Header colors and button formatting
+4. fixed cart button to correct font color and made font-weight bold.
+5. Changed search icon to black
+------------------------------------------------
 
 TO DO -- 6/6/2018:
 1. Headers on all but index.html need "Today's Deals" color and hover are corrected (change color to red)
