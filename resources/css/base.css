@@ -287,7 +287,7 @@ nav {
 }
 
 nav a {
-  border-right: 1px solid lightgray;
+  border-right: 1px solid #fff;
   text-align: center;
   line-height: 2.626rem;
   width: 100%;
@@ -301,7 +301,7 @@ a.deals {
 
 
 nav a.deals {
-  border-left: 1px solid lightgray;
+  border-left: 1px solid #fff;
   color: red;
 }
 
@@ -322,11 +322,14 @@ div.secondary {
 }
 
 div.secondary a:hover{
-  /*  font-size: 1.22rem;
-*/  color: #FDC029;
+/*  color: #FDC029;
   background-color: #AA3D01;
   padding: 10px 10px;
   border-radius: 5px;
+*/
+  color: #AA3D01;
+  text-decoration: underline;
+    text-decoration-style: wavy;
 }
 
 nav a:hover.deals {
@@ -384,12 +387,13 @@ footer h4 {
 }
 
 footer a {
-  font-size: 0.9rem;
-  color: #AA3D01;
+  font-size: 0.95rem;
+  line-height: 1.15;
 }
 
 footer a:hover {
-  font-size: 1.1rem;
+  text-decoration: underline;
+  text-decoration-style: wavy;
 }
 
 @media only screen and (max-width: 810px) {
