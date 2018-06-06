@@ -304,8 +304,9 @@ nav a.deals {
 }
 
 nav a:hover {
-  color:#FDC029;
-  background-color: #AA3D01;
+/*  color:#FDC029;
+*/  background-color: rgba(255, 255, 255,0.3);
+  color: rgba(170, 61, 1, 1);
 }
 
 
@@ -318,10 +319,6 @@ div.secondary {
   padding: 1rem 0px; 
 }
 
-a:hover {
-  
-}
-
 div.secondary a:hover{
   /*  font-size: 1.22rem;
 */  color: #FDC029;
@@ -331,9 +328,8 @@ div.secondary a:hover{
 }
 
 nav a:hover.deals {
-  background-color: red;
-  color: #FDC029;
   padding: 0;
+  color: red;
 }
 
 
