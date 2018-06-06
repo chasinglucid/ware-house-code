@@ -285,7 +285,7 @@ nav {
 }
 
 /* Added by Jen */
-nav .box.deal {
+nav .box.deals {
   color: red;
 }
 
@@ -318,7 +318,7 @@ nav a {
   font-weight: bold;
 }
 
-a:hover.deals.product-item  {
+a:hover.deal.product-item  {
   background: none;
 }
 

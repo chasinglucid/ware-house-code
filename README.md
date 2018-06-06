@@ -1,5 +1,10 @@
 # ware-house-code
 
+
+Completed -- 6/6/2018:
+1. Headers on all but index.html need "Today's Deals" color and hover are corrected (change color to red)
+2. Products on sofas.html, tables.html, and chairs.html formatting matches index.html and deals.html
+
 TO DO -- 6/6/2018:
 1. Headers on all but index.html need "Today's Deals" color and hover are corrected (change color to red)
 2. Fix breadcrumbs
