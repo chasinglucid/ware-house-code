@@ -19,7 +19,7 @@ a {
   text-decoration: none;
   transition: .3s;
   color: #AA3D01;
-/*  cursor: pointer;*/
+ cursor: pointer;
 }
 
 a:hover {
@@ -271,23 +271,24 @@ a:hover.cart {
 nav {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 0;
   justify-items: center;
-  align-items: center;
   grid-area: nav;
   background-color: #FDC029;
   color: #AA3D01;
   border-top: 1px solid hsla(0, 0%, 85%, 1);
+/*    padding: 1.313rem 24.25rem 1.313rem 25rem; */
+
   padding-right: 24.25rem;
   padding-left: 25rem;
   box-sizing: border-box;
   min-height: 2.626rem;
+  grid-gap: 0;
+  align-items: center;
 }
 
-/* Added by Jen */
-nav .box.deal {
+/*nav .box.deal {
   color: red;
-}
+} */
 
 nav div.box {
   border-right: 1px solid lightgray;
@@ -296,33 +297,43 @@ nav div.box {
   width: 100%;
 }
 
-nav div.box:nth-child(1) {
+nav div.deals {
   border-left: 1px solid lightgray;
   color: red;
 }
 
-/*
-.box:hover,
+
+div:hover.box,
 nav a:hover {
   color:#FDC029;
   background-color: #AA3D01;
 }
 
-nav div.box.deals:hover,
-nav div.box.deals a:hover {
-  background-color: red;
+nav div:hover .box.deals {/*,
+nav div.box.deals a:hover.deal {
+*/background-color: red;
   color: #FDC029;
 }
-*/
+
 nav a {
   font-weight: bold;
 }
 
-a:hover.deals.product-item  {
+/*a:hover.deals.product-item  {
   background: none;
 }
+*/
+div.secondary {
+  grid-area: secondary;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  justify-items: center;
+  color: #AA3D01;
+  padding: 1rem 0px; 
+}
 
-div.secondary a:hover {
+div.secondary a:hover,
+a:hover {
   font-size: 1.22rem;
   color: #FDC029;
   background-color: #AA3D01;
@@ -334,15 +345,6 @@ div.secondary a:hover {
   color: hsla(0, 0%, 29%, 1);
 }
 */
-
-div.secondary {
-  grid-area: secondary;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  justify-items: center;
-  color: #AA3D01;
-  padding: 1rem 0px; 
-}
 
 
 @media only screen and (max-width: 1100px) {
@@ -418,5 +420,18 @@ footer a:hover {
   }
 }
 
+/* Added by Jen */
+a.deal {
+  color: red;
+} 
+/*
+a:hover.deal {
+  background-color: red;
+  color: #FDC029;
+}
+*/
+a:hover.deals.product-item  {
+  background: none;
+}
 
 
