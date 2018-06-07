@@ -82,9 +82,9 @@ select {
   border-top: 1px solid hsla(0, 0%, 98%, 1);
 }
 
-#main > * {
+/*#main > * {
   border: 1px solid gray;
-}
+}*/
 
 #main h2 {
   margin-bottom: 2rem;
@@ -172,28 +172,33 @@ div.breadcrumbs {
   grid-template-columns: 1fr;
   justify-items: start;
   color: inherit;
-  padding: 3rem 3rem; 
+  padding: 0 3rem 2rem 3rem; 
 }
   
 ul.breadcrumb {
-  padding: 2rem 0;
+  padding: 1rem 0 0.5rem 0;
   list-style: none;
   text-align: left;
 }
 
 ul.breadcrumb li {
-    display: inline;
     font-size: inherit;
     float: left;
 }
+
 ul.breadcrumb li+li:before {
-    padding: 2rem;
+    padding: 0 0.5rem;
     color: hsla(0, 0%, 29%, 1);
-    content: "/\00a0";
+    content: ">";
 }
 ul.breadcrumb li a {
-    color: hsla(0, 0%, 29%, 1);
-    text-decoration: none;
+/*    color: hsla(0, 0%, 29%, 1);
+*/    text-decoration: none;
+}
+
+.breadcrumb a:hover{
+  color: #AA3D01;
+  text-decoration: underline;
 }
 
 
@@ -227,7 +232,7 @@ ul.breadcrumb li a {
 header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 22rem 1fr 22rem;
+  grid-template-columns: 22rem 1fr 11rem 11rem;
   align-items: center;
   padding: .75rem 5rem;
   font-size: inherit;
@@ -285,7 +290,12 @@ a:hover.cart {
 }
 
 .cart img {
-  padding-left: .625rem;
+  padding-left: 1rem;
+}
+
+a.login {
+  padding-left: 2rem;
+  float: left;
 }
 
 nav {
@@ -340,11 +350,6 @@ div.secondary {
 }
 
 div.secondary a:hover{
-/*  color: #FDC029;
-  background-color: #AA3D01;
-  padding: 10px 10px;
-  border-radius: 5px;
-*/
   color: #AA3D01;
   text-decoration: underline;
 }

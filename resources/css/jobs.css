@@ -9,19 +9,15 @@
 
 .jobs h3 {
   margin-bottom: 1rem;
-  font-size: inherit;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 form {
   display: grid;
-  grid-template-columns: repeat(2, 2fr) 1fr;
-  align-items: flex-end;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: baseline;
   margin-bottom: 3.125rem;
-}
-
-#main form .button {
-  height: fit-content;
-  padding: 1.14rem 0;
 }
 
 .job-list {
@@ -39,7 +35,53 @@ form {
   line-height: 1.2;
 }
 
-#see-all-jobs {
+div.field input.jobsearch {
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid gray;
+  align-self: end;
+}
+
+#main .button {
+  height: fit-content;
+  padding: 1rem 1.6rem;
+  background-color: #FDC029;
+  color: #AA3D01;
+  font-family: arial, sans-serif;
+  font-weight: bolder;
+  width: 5rem;
+
+}
+
+.go {
+  justify-self: center;
+  display: flex;
+  align-self: end;
+  padding: .875rem 1rem;
+  border-radius: 54px;
+  border: 1px solid #AA3D01;
+  box-shadow: 4px 4px 10px;
+}
+
+a.go {
+  background-color: #FDC029;
+  color: #AA3D01;
+  font-family: arial, sans-serif;
+  font-weight: bolder;
+}
+
+#main .button:hover,
+a:hover.button.go {
+  color: #fff;
+  background-color: #AA3D01;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 10px #000;
+}
+
+#main #see-all-jobs.button {
   justify-self: center;
   margin-top: 3.6875rem;
+  width: 10rem;
+  padding: 1rem 1rem;
+  min-width: 5rem;
 }
