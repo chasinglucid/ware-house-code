@@ -82,6 +82,10 @@ select {
   border-top: 1px solid hsla(0, 0%, 98%, 1);
 }
 
+#main > * {
+  border: 1px solid gray;
+}
+
 #main h2 {
   margin-bottom: 2rem;
   font-size: 2rem;
@@ -161,15 +165,26 @@ select {
 }
 
 /* Reusable Component - Navigation Breadcrumbs */
-ul.breadcrumb {
-    padding: 2rem 4rem;
-    list-style: none;
-    align-items: left;
+
+div.breadcrumbs {
+  grid-area: breadcrumbs;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  color: inherit;
+  padding: 3rem 3rem; 
 }
+  
+ul.breadcrumb {
+  padding: 2rem 0;
+  list-style: none;
+  text-align: left;
+}
+
 ul.breadcrumb li {
     display: inline;
     font-size: inherit;
-    align-items: left;
+    float: left;
 }
 ul.breadcrumb li+li:before {
     padding: 2rem;
@@ -202,6 +217,7 @@ ul.breadcrumb li a {
   grid-template-areas:  'header'
                         'nav'
                         'secondary'
+                        'breadcrumbs'
                         'main'
                         'footer';
 }
@@ -230,15 +246,13 @@ header {
   border-top-left-radius: 30px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 30px;
-  border: 1px solid lightgrey;
+  border: 1px solid darkgray;
 }
 
 .search-bar .icon {
   background-color: hsla(0, 0%, 89%, 1);
   border-radius: 0 53px 53px 0;
-  border-bottom: 1px solid darkgrey;
-  border-left: 1px solid darkgrey;
-  border-top: 1px solid lightgrey;
+  border: 1px solid darkgray;
   padding: 1rem;
 }
 
@@ -252,6 +266,8 @@ header {
   align-items: center;
   padding: .875rem 1rem;
   border-radius: 54px;
+  border: 1px solid #AA3D01;
+  box-shadow: 4px 4px 10px;
 }
 
 a.cart {
@@ -262,8 +278,10 @@ a.cart {
 }
 
 a:hover.cart {
-  background-color: #DF861D;
-  color: #FDC029;
+  color: #fff;
+  background-color: #AA3D01;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 10px #000;
 }
 
 .cart img {
@@ -329,19 +347,12 @@ div.secondary a:hover{
 */
   color: #AA3D01;
   text-decoration: underline;
-    text-decoration-style: wavy;
 }
 
 nav a:hover.deals {
   padding: 0;
   color: red;
 }
-
-
-/*nav a:visted {
-  color: hsla(0, 0%, 29%, 1);
-}
-*/
 
 
 @media only screen and (max-width: 1100px) {
@@ -388,12 +399,11 @@ footer h4 {
 
 footer a {
   font-size: 0.95rem;
-  line-height: 1.15;
+  line-height: 1.5;
 }
 
 footer a:hover {
   text-decoration: underline;
-  text-decoration-style: wavy;
 }
 
 @media only screen and (max-width: 810px) {
@@ -418,15 +428,5 @@ footer a:hover {
   }
 }
 
-/* Added by Jen */
-/*
-a:hover.deal {
-  background-color: red;
-  color: #FDC029;
-}
-*/
-a:hover.deals.product-item  {
-  background: none;
-}
 
 
