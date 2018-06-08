@@ -47,17 +47,23 @@ select {
 
 .button {
   border-radius: 30px;
-  background-color: hsla(0, 0%, 13%, 1);
+  background-color: #FDC029;
   text-align: center;
-  color: hsla(0, 0%, 93%, 1);
+  color: #AA3D01;
   transition: .25s;
   font-weight: bold;
+  box-sizing: border-box;
+/*  min-width:  14.375rem;
+*/  padding: .875rem 1rem;
+
 }
 
-.button:hover {
-
-  background-color: Black - hsla(0, 0%, 13%, 1);
-  color: hsla(0, 100%, 100%, 1);
+.button:hover,
+a.button:hover {
+  color: #fff;
+  background-color: #AA3D01;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 10px #000;
 }
 
 /* Reusable Component - Image Container */
@@ -83,20 +89,12 @@ select {
   border-top: 1px solid hsla(0, 0%, 98%, 1);
 }
 
-/*#main > * {
-  border: 1px solid gray;
-}*/
 
 #main h2 {
   margin-bottom: 2rem;
   font-size: 2rem;
 }
 
-#main .button {
-  box-sizing: border-box;
-  width: 14.375rem;
-  padding: .875rem 0;
-}
 
 /* Reusable Component - Product List */
 
@@ -443,7 +441,7 @@ footer a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  a.cart {
+   a.cart {
     background-color: #FDC029; 
     margin: 1rem 0;
   }

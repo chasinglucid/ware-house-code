@@ -42,6 +42,11 @@ input {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   padding: 1rem 0rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 3rem;
+
 }
 
 .product-item h3 {
@@ -57,79 +62,9 @@ input {
   padding: 1.5rem;
   text-align: left;
 }
-
-.total .description h3{
-  float: left;
-}
-.total .description span{
-  float: right;
-  padding-bottom: 2rem;
-}
-/*
-#main .button {
-  box-sizing: border-box;
-  padding: 0.875rem 5rem;
-  border-radius: 54px;
-  margin-left: 1rem;
-}
-*/
-
-@media only screen and (max-width: 1020px) {
-  .landing .product-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-
-@media only screen and (max-width: 760px) {
-  .landing .product-list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-
-@media only screen and (max-width: 470px) {
-  .landing .product-list {
-    grid-template-columns: 1fr;
-  }
-}
-
-#main .button {
-  height: fit-content;
-  padding: 1rem 1.6rem;
-  background-color: #FDC029;
-  color: #AA3D01;
-  font-family: arial, sans-serif;
-  font-weight: bolder;
-  width: 5rem;
-
-}
-
-.checkout {
-  justify-self: center;
-/*  display: flex;
-  align-self: end;
-*/
-  margin: 3rem;
-  padding: .875rem 1rem;
-  border-radius: 54px;
-  border: 1px solid #AA3D01;
-  box-shadow: 4px 4px 10px;
-}
-
-a.checkout {
-  background-color: #FDC029;
-  color: #AA3D01;
-  font-family: arial, sans-serif;
-  font-weight: bolder;
-}
-
-#main .button:hover,
-a:hover.button.checkout {
-  color: #fff;
-  background-color: #AA3D01;
-  border: 2px solid #000;
-  box-shadow: 4px 4px 10px #000;
+.total .description {
+  grid-row-start: 1;
+  grid-row-end: 1;
 }
 
 .description p a {
@@ -148,3 +83,57 @@ p a.remove {
   padding: 2rem 4rem;
   float: right;
 }
+
+.total .description h3{
+  float: left;
+}
+.total .description span{
+  float: right;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1020px) {
+  .landing .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media only screen and (max-width: 760px) {
+  .landing .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .landing .product-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.checkout.button {
+  height: fit-content;
+  justify-self: center;
+  align-self: center;
+  border: 1px solid #AA3D01;
+  box-shadow: 4px 4px 10px;
+}
+
+a.checkout {
+  background-color: #FDC029;
+  color: #AA3D01;
+  font-family: arial, sans-serif;
+  font-weight: bolder;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+  align-self: start;
+}
+
+#main .button:hover,
+a:hover.button.checkout {
+  color: #fff;
+  background-color: #AA3D01;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 10px #000;
+}
+

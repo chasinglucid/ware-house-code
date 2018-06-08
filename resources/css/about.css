@@ -70,8 +70,6 @@
 
 .join a {
   justify-self: center;
-/*  display: flex;
-  align-self: end;*/
   padding: .875rem 1rem;
   border-radius: 54px;
   border: 1px solid #AA3D01;
@@ -83,10 +81,3 @@
   font-weight: bolder;
 }
 
-.join a:hover.button {
-    color: #fff;
-  background-color: #AA3D01;
-  border: 2px solid #000;
-  box-shadow: 4px 4px 10px #000;
-
-}
