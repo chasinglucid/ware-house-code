@@ -9,20 +9,29 @@
 
 .sell h3 {
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 form {
   display: grid;
-  grid-template-areas: 'name name price quantity'
-                       'description description description description'
-                       '. . . submit';
+  grid-template-areas:  'firstname lastname . account '
+                        'name name price quantity'
+                        'description description description description'
+                        '. . . submit';
   font-size: inherit;
+  grid-gap: 3px;
 }
 
 input {
   min-width: 100%;
   box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 30px;
+}
+
+div.field label {
+  font-weight: bold;
 }
 
 select {
@@ -35,25 +44,66 @@ textarea {
   font-size: inherit;
 }
 
+#firstname {
+  grid-area: firstname;
+  margin-right: .5rem;
+}
+
+#lastname {
+  grid-area: lastname;
+  margin-right: .5rem;
+}
+
+#account {
+  grid-area: account;
+  margin-right: .5rem;
+}
+
 #name {
   grid-area: name;
+  margin-right: .5rem;
+  margin-top: 1.5rem;
 }
 
 #price {
   grid-area: price;
+  margin-right: .5rem;
+  margin-top: 1.5rem;
 }
 
 #quantity {
   grid-area: quantity;
+  margin-top: 1.5rem;
 }
 
 #description {
   grid-area: description;
+  margin-top: 1.5rem;
 }
 
 #submit {
   grid-area: submit;
   justify-self: end;
+  margin-top: 1rem;
+}
+
+a:hover#submit {
+    color: #fff;
+  background-color: #AA3D01;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 10px #000;
+
+}
+
+a#submit{
+  padding: .875rem 1rem;
+  border-radius: 54px;
+    border: 1px solid #AA3D01;
+  box-shadow: 4px 4px 10px;
+  background-color: #FDC029;
+  color: #AA3D01;
+  font-family: arial, sans-serif;
+  font-weight: bolder;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -65,22 +115,27 @@ textarea {
 
 @media only screen and (max-width: 970px) {
   form {
-    grid-template-areas: 'name name'
-                         'price quantity'
-                         'description description'
-                         '. submit';
+    grid-template-areas:  'firstname lastname'
+                          'account .'
+                          'name name'
+                          'price quantity'
+                          'description description'
+                          '. submit';
   }
 }
 
 @media only screen and (max-width: 660px) {
   form {
-    grid-template-areas: 'name'
-                         'price'
-                         'quantity'
-                         'description'
-                         'submit';
+    grid-template-areas:  'firstname'
+                          'lastname'
+                          'account'
+                          'name'
+                          'price'
+                          'quantity'
+                          'description'
+                          'submit';
   }
-
+  
   #submit {
     justify-self: center;
   }
