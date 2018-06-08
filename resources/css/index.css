@@ -41,12 +41,20 @@
   .landing .product-list {
     grid-template-columns: repeat(3, 1fr);
   }
+  
+  .products {
+    padding-bottom: 1rem;
+  }
 }
 
 
 @media only screen and (max-width: 760px) {
   .landing .product-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero {
+    border-radius: 0;
   }
 }
 
