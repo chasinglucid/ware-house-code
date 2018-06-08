@@ -65,13 +65,14 @@ input {
   float: right;
   padding-bottom: 2rem;
 }
-
+/*
 #main .button {
   box-sizing: border-box;
   padding: 0.875rem 5rem;
   border-radius: 54px;
   margin-left: 1rem;
 }
+*/
 
 @media only screen and (max-width: 1020px) {
   .landing .product-list {
@@ -91,4 +92,59 @@ input {
   .landing .product-list {
     grid-template-columns: 1fr;
   }
+}
+
+#main .button {
+  height: fit-content;
+  padding: 1rem 1.6rem;
+  background-color: #FDC029;
+  color: #AA3D01;
+  font-family: arial, sans-serif;
+  font-weight: bolder;
+  width: 5rem;
+
+}
+
+.checkout {
+  justify-self: center;
+/*  display: flex;
+  align-self: end;
+*/
+  margin: 3rem;
+  padding: .875rem 1rem;
+  border-radius: 54px;
+  border: 1px solid #AA3D01;
+  box-shadow: 4px 4px 10px;
+}
+
+a.checkout {
+  background-color: #FDC029;
+  color: #AA3D01;
+  font-family: arial, sans-serif;
+  font-weight: bolder;
+}
+
+#main .button:hover,
+a:hover.button.checkout {
+  color: #fff;
+  background-color: #AA3D01;
+  border: 2px solid #000;
+  box-shadow: 4px 4px 10px #000;
+}
+
+.description p a {
+  margin-bottom: .75rem;
+  color: #DF861D;
+  position: relative;
+  display: block;
+  font-weight: bold;
+}
+
+.description span.price {
+  color: gray;
+}
+
+p a.remove {
+  padding: 2rem 4rem;
+  float: right;
 }

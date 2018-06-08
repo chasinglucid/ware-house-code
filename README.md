@@ -4,10 +4,8 @@
 TO DO -- 6/8/2018
 1. Add login pop-up
 2. Add form fields on Sell page
-3. Add "remove" to items and update button on cart.html
-4. Create links to products on cart.html
-5. redesign mobile responsive
-6. Make accessible for screen readers
+3. redesign mobile responsive
+4. Make accessible for screen readers
 
 ----------------------------------------------------
 
@@ -16,6 +14,8 @@ Completed -- 6/7/2018
 2. Add login link on all pages. (Not working ATM)
 3. Fixed buttons and job search field on jobs.html
 4. On about.html, correct hover on button at bottom
+5. Add "remove" to items and update button on cart.html
+6. Create links to products on cart.html
 
 ---------------------------------------------------
 
