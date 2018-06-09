@@ -1,6 +1,19 @@
 # ware-house-code
 
 
+TO DO -- 6/10
+
+1. accessibility
+2. login pop-up (optional)
+
+----------------------------------------------------
+
+Completed -- 6/9/2018
+1. Form fields on Sell page
+2. mobile responsibeness
+
+----------------------------------------------------
+
 TO DO -- 6/8/2018
 1. Add login pop-up
 2. Add form fields on Sell page
