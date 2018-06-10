@@ -9,7 +9,7 @@
   background-position: center;
   font-stretch: condensed;
   border-radius: 1.5rem;
-  color: #DF861D;
+  color: #007a7c;
   font-family: 'Yanone Kaffeesatz', Helvetica, sans-serif;
   font-size: 4rem;
   font-weight: bold;
@@ -68,7 +68,7 @@
   }
 }
 
-.join a {
+/*.join a {
   justify-self: center;
   padding: .875rem 1rem;
   border-radius: 54px;
@@ -81,3 +81,4 @@
   font-weight: bolder;
 }
 
+*/
