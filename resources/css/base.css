@@ -155,10 +155,14 @@ a.button:hover {
 
 .product-item p {
   margin-bottom: .75rem;
-  color: #007a7c;
+  color: #DF861D;
   position: relative;
   display: block;
   font-weight: bold;
+}
+
+.description p a {
+  color: #DF861D;
 }
 
 .product-item .price {
