@@ -155,7 +155,7 @@ a.button:hover {
 
 .product-item p {
   margin-bottom: .75rem;
-  color: #DF861D;
+  color: #007a7c;
   position: relative;
   display: block;
   font-weight: bold;
@@ -384,6 +384,7 @@ footer .links {
 footer h3 {
   font-size: 1rem;
   text-decoration: underline;
+  color: #000;
 }
 
 footer a {
