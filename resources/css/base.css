@@ -6,34 +6,64 @@
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700');
 /* Site-Wide Styles */
 
+* {
+  font-size: 18px;
+}
+
 html {
-  font-size: 22px;
+
 }
 
 
 body {
   font-family: 'Arial-MT', sans-serif;
-  color: hsla(0, 0%, 29%, 1);
+  color: #292929;
 }
 
 a {
   text-decoration: none;
   transition: .3s;
-  color: #007a7c;
+  color: #03a678;
   cursor: pointer;
 }
 
 a:hover {
-  color: #005051;
   font-size: 1.2rem;
   cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px dotted #03a678;
+}
+
+a.login {
+  font-size: 1.2rem;
+}
+
+a:hover.login {
+  border: none;
+  font-size: 1.7rem;
 }
 
 h1,
 h2,
 h3,
 h4 {
+  font-weight: bold;
+}
 
+h1 {
+  color: #1978d4;
+}
+
+h2 {
+    font-size: 2rem;
+}
+h3 {
+  color: #009fd4;
+}
+
+h4 {
+   color: #000;
+  text-decoration: underline;
 }
 
 input,
@@ -48,8 +78,8 @@ select {
 
 .button {
   border-radius: 30px;
-  background-color: #FDC029; 
-  color: #007a7c;
+  background-color: #fefefe; 
+  color: #009fd4;
   text-align: center;
   transition: .25s;
   font-weight: bold;
@@ -67,7 +97,7 @@ select {
 .button:hover,
 a.button:hover {
   color: #fff;
-  background-color: #007a7c;
+  background-color: #009fd4;
   border: 2px solid #000;
   box-shadow: 4px 4px 10px #000;
 }
@@ -92,14 +122,13 @@ a.button:hover {
   display: grid;
   justify-items: center;
   text-align: center;
-  background-color: hsla(0, 0%, 98%, 1);
+  background-color: #fefefe;
   border-top: 1px solid hsla(0, 0%, 98%, 1);
 }
 
 
 #main h2 {
   margin-bottom: 2rem;
-  font-size: 2rem;
 }
 
 
@@ -155,18 +184,18 @@ a.button:hover {
 
 .product-item p {
   margin-bottom: .75rem;
-  color: #007a7c;
+  color: #03a678;
   position: relative;
   display: block;
   font-weight: bold;
 }
 
 .description p a {
-  color: #DF861D;
+  color: #03a678;
 }
 
 .product-item .price {
-  color: gray;
+  color: #696969;
   float: right;
 }
 
@@ -179,6 +208,7 @@ a.button:hover {
 
 .field label {
   padding-bottom: .75rem;
+  color: #2b2b2b;
 }
 
 /* Reusable Component - Navigation Breadcrumbs */
@@ -209,13 +239,14 @@ ul.breadcrumb li+li:before {
     content: ">";
 }
 ul.breadcrumb li a {
-    color: #8d6708;
+    color: #2b2b2b;
     text-decoration: none;
 }
 
 .breadcrumb a:hover{
-  color: #8d6708;
-  text-decoration: underline;
+  color: #2b2b2b;
+  text-decoration: none;
+  border-bottom: 1px dotted #2b2b2b;
 }
 
  /* Site-Wide Grid */
@@ -239,7 +270,7 @@ header {
   align-items: center;
   padding: .75rem 5rem;
   font-size: inherit;
-  background-color: hsla(0, 0%, 93%, 1);
+  background-color: #fefefe;
 }
 
 .search-bar {
@@ -254,13 +285,13 @@ header {
   border-top-left-radius: 30px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 30px;
-  border: 1px solid darkgray;
+  border: 1px solid #2b2b2b;
 }
 
 .search-bar .icon {
   background-color: hsla(0, 0%, 89%, 1);
   border-radius: 0 53px 53px 0;
-  border: 1px solid darkgray;
+  border: 1px solid #2b2b2b;
   padding: 1rem;
 }
 
@@ -274,20 +305,19 @@ header {
   align-items: center;
   padding: .875rem 1rem;
   border-radius: 54px;
-  border: 1px solid #007a7c;
+  border: 1px solid #fefefe;
   box-shadow: 4px 4px 10px;
+  background-color: #009fd4;
+  color: #fefefe
 }
 
 a.cart {
-  font-weight: bolder;
-  background-color: #FDC029; 
- color: #007a7c;
   margin: 1rem 0;
 }
 
 a:hover.cart {
   color: #fff;
-  background-color: #007a7c;
+  background-color: #009fd4;
   border: 2px solid #000;
   box-shadow: 4px 4px 10px #000;
 }
@@ -302,10 +332,8 @@ nav {
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   grid-area: nav;
-  background-color: #FDC029;
-/*  color: #AA3D01;
-*/
-  color: #007a7c;
+  background-color: #009fd4;
+  color: #fefefe;
   border-top: 1px solid hsla(0, 0%, 85%, 1);
   padding-right: 24.25rem;
   padding-left: 25rem;
@@ -322,10 +350,13 @@ nav {
   width: 100%;
   font-weight: bold;
   height: 100%;
+  color: #fefefe
 }
  
 a.deals {
   color: #D50000;
+  font-size: 1.2rem;
+  font-weight: normal;
 } 
 
 nav a.deals {
@@ -335,7 +366,7 @@ nav a.deals {
 
 nav a:hover {
   background-color: rgba(255, 255, 255,0.3);
-  color: #005051;
+  color: #fefefe;
   font-size: 1.5rem;
 }
 
@@ -345,14 +376,12 @@ div.secondary {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   justify-items: center;
-  color: #005051;
   padding: 1rem 0px; 
 }
 
 div.secondary a:hover{
-  color: #005051;
   font-size: 1.2rem;
-  text-decoration: underline;
+  border-bottom: 1px dotted inherit;
 }
 
 nav a:hover.deals {
@@ -393,7 +422,7 @@ footer a {
 }
 
 footer a:hover {
-  text-decoration: underline;
+  border: none;
 }
 
 @media only screen and (max-width: 810px) {
@@ -485,9 +514,9 @@ footer a:hover {
    }
 
   nav a:hover {
-  background-color: rgba(255, 255, 255,0.3);
+/*  background-color: rgba(255, 255, 255,0.3);
   color: rgba(170, 61, 1, 1);
-  padding: 0;
+*/  padding: 0;
   }
 
 }

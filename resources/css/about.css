@@ -9,21 +9,19 @@
   background-position: center;
   font-stretch: condensed;
   border-radius: 1.5rem;
-  color: #007a7c;
   font-family: 'Yanone Kaffeesatz', Helvetica, sans-serif;
   font-size: 4rem;
   font-weight: bold;
-
+  text-shadow: 2px 2px #fefefe;
 }
 
 .about .information {
   padding: 3.75rem 20% 6.75rem 20%;
-  color: hsla(0, 0%, 29%, 1);
 }
 
 .about h2 {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -68,17 +66,3 @@
   }
 }
 
-/*.join a {
-  justify-self: center;
-  padding: .875rem 1rem;
-  border-radius: 54px;
-  border: 1px solid #AA3D01;
-  box-shadow: 4px 4px 10px;
-
-  background-color: #FDC029;
-  color: #AA3D01;
-  font-family: arial, sans-serif;
-  font-weight: bolder;
-}
-
-*/

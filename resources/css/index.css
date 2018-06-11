@@ -8,16 +8,16 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  color: hsla(0, 0%, 100%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
 }
 
 #main.landing .hero h1 {
   padding-top: 10rem;
-  color: #007a7c;
   font-family: 'Yanone Kaffeesatz', Helvetica, sans-serif;
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
+  text-shadow: 2px 2px #fefefe;
 }
 
 .products {
