@@ -23,7 +23,7 @@ body {
 a {
   text-decoration: none;
   transition: .3s;
-  color: #03a678;
+  color: #0f4880;
   cursor: pointer;
 }
 
@@ -182,14 +182,14 @@ main h2 {
 
 .product-item p {
   margin-bottom: .75rem;
-  color: #03a678;
+  color: #0f4880;
   position: relative;
   display: block;
   font-weight: bold;
 }
 
 .description p a {
-  color: #03a678;
+  color: #0f4880;
 }
 
 .product-item .price {

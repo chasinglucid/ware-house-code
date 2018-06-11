@@ -1,4 +1,4 @@
-#main {
+main {
   text-align: left;
   justify-items: auto;
 }
@@ -144,7 +144,7 @@ a#submit{
     justify-self: center;
   }
   
-  #main {
+  main {
     padding: 0.2rem 0.2rem 2rem 0.2rem;
     margin: 0 0 0.5rem 0;
     justify-self: center;
@@ -152,7 +152,7 @@ a#submit{
     width: 80%;
   }
   
-  #main h3 {
+  main h3 {
     font-size: 1.4rem;
     text-align: center;
   }
