@@ -10,25 +10,30 @@
 
     <!-- Header -->
 
+    <!-- Header -->
+
     <header>
       <div class="image-container">
-        <a href="index.html"><img src="resources/img/home.png" alt="warehouse"></a>
+        <a href="index.html"><img src="resources/img/home.png" alt="Warehouse"></a>
       </div>
       <div class="search-bar">
-        <input type="text" name="search" placeholder="Search for items">
+        <input type="text" name="search" aria-label="Search" placeholder="Search for items">
         <a href="" class="icon"><img src="resources/img/search.png" alt="search button"></a>
       </div>
       <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg" alt="cart"></a>
       <a class="login" href="#">Login</a>
-
     </header>
-    <nav>
+    
+    <!-- Nav main -->
+    <nav role="main">
         <a class="deals" href="deals.html">Today's Deals</a>
          <a href="products.html">Products</a>
         <a href="about.html">About Us</a>
         <a href="#">Help</a>
     </nav>
-    <div class="secondary">
+    
+    <!-- Nav sub -->
+    <nav role="sub" class="desktop">
       <a href="living.html">Living Room</a>
       <a href="#">Bedroom</a>
       <a href="#">Bathroom</a>
@@ -38,21 +43,11 @@
       <a href="#">Office + Storage</a>
       <a href="#">Patio</a>
       <a href="#">Tools</a>      
-    </div>
-    
-        <div class="breadcrumbs">
-      <ul class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">All Products</a></li>
-        <li><a href="living.html">Living Room</a></li>
-        <li><a href="tables.html">Tables</a></li>
-        </ul>
-    </div>
-
+    </nav>
 
     <!-- Tables Section -->
 
-    <div id="main" class="product-list-section">
+    <main class="product-list-section">
 
       <div class="product-list">
         <a href="#" class="product-item">
@@ -86,7 +81,7 @@
         </a>
 
       </div>
-    </div>
+    </main>
 
     <!-- Footer -->
 

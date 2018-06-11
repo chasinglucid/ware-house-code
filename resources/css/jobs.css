@@ -1,4 +1,4 @@
-#main {
+main {
   text-align: ceenter;
   justify-items: auto;
 }
@@ -43,18 +43,6 @@ div.field input.jobsearch {
   align-self: end;
 }
 
-/*
-#main .button {
-  height: fit-content;
-  padding: 1rem 1.6rem;
-  background-color: #FDC029;
-  color: #AA3D01;
-  font-family: arial, sans-serif;
-  font-weight: bolder;
-  width: 5rem;
-
-}
-*/
 .go {
   justify-self: center;
   display: flex;
@@ -65,25 +53,8 @@ div.field input.jobsearch {
   border: 1px solid #007a7c;
   box-shadow: 4px 4px 10px;
 }
-/*
-a.go {
-  background-color: #FDC029;
-  color: #AA3D01;
-  font-family: arial, sans-serif;
-  font-weight: bolder;
-}
 
-
-#main .button:hover,
-a:hover.button.go {
-  color: #fff;
-  background-color: #AA3D01;
-  border: 2px solid #000;
-  box-shadow: 4px 4px 10px #000;
-}
-*/
-
-#main #see-all-jobs.button {
+main #see-all-jobs.button {
   justify-self: center;
   margin-top: 3.6875rem;
   width: 10rem;

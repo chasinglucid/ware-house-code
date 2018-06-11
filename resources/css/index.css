@@ -11,7 +11,7 @@
   background-color: hsla(0, 0%, 100%, 1);
 }
 
-#main.landing .hero h1 {
+main.landing .hero h1 {
   padding-top: 10rem;
   font-family: 'Yanone Kaffeesatz', Helvetica, sans-serif;
   font-size: 4rem;
@@ -26,7 +26,6 @@
 
 .products h2 {
   margin-top: 2rem;
-  font-size: inherit;
 }
 
 .landing .product-list {
@@ -80,6 +79,6 @@
   }
 }
 
-#main.landing .products h2.recently {
+main.landing .products h2.recently {
   font-size: 1.5rem;
 }
