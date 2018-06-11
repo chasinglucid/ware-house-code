@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>WareHouse</title>
   <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
@@ -12,20 +12,20 @@
 
      <!-- Header -->
 
-    <header>
+    <header aria-label="header">
       <div class="image-container">
-        <a href="index.html"><img src="resources/img/home.png" alt="Warehouse"></a>
+        <a href="index.html"><img src="resources/img/home.png" alt="Warehouse" aria-label="company logo"></a>
       </div>
       <div class="search-bar">
         <input type="text" name="search" aria-label="Search" placeholder="Search for items">
-        <a href="" class="icon"><img src="resources/img/search.png" alt="search button"></a>
+        <a href="" class="icon" aria-label="search button"><img src="resources/img/search.png" alt="search button"></a>
       </div>
-      <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg" alt="cart"></a>
+      <a href="cart.html" aria-label="cart button" class="button cart">Cart <img src="resources/img/cart.svg" alt="cart"></a>
       <a class="login" href="#">Login</a>
     </header>
     
     <!-- Nav main -->
-    <nav role="main">
+    <nav role="main" aria-label="main navigation">
         <a class="deals" href="deals.html">Today's Deals</a>
          <a href="products.html">Products</a>
         <a href="about.html">About Us</a>
@@ -33,7 +33,7 @@
     </nav>
     
     <!-- Nav sub -->
-    <nav role="sub" class="desktop">
+    <nav aria-label="sub navigation" role="sub" class="desktop">
       <a href="living.html">Living Room</a>
       <a href="#">Bedroom</a>
       <a href="#">Bathroom</a>
@@ -57,12 +57,12 @@
 
     <main class="product-list-section">
 
-      <div class="product-list">
+      <div aria-label="product listings" class="product-list">
 
 
         <a href="#" class="product-item">
           <div class="image-container">
-            <img src="resources/img/chairs/basket-chair.jpg">
+            <img src="resources/img/chairs/basket-chair.jpg" alt="basket chair">
           </div>
           <div class="description">
             <p>Basket Chair
@@ -105,7 +105,7 @@
 
     <!-- Footer -->
 
-    <footer>
+    <footer aria-label="company sitemap links">
       <img src="resources/img/home.png">
       <div class="links">
         <h3>Get to know us</h3>

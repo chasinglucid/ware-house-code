@@ -57,7 +57,7 @@ h2 {
     font-size: 2rem;
 }
 h3 {
-  color: #009fd4;
+  color: #1978d4;
 }
 
 h4 {
@@ -78,7 +78,7 @@ select {
 .button {
   border-radius: 30px;
   background-color: #fefefe; 
-  color: #009fd4;
+  color: #1978d4;
   text-align: center;
   transition: .25s;
   font-weight: bold;
@@ -99,6 +99,7 @@ a.button:hover {
   background-color: #009fd4;
   border: 2px solid #000;
   box-shadow: 4px 4px 10px #000;
+  text-decoration: none;
 }
 
 
